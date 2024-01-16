@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function StudentInfo() {
     return (<div className="flex min-h-screen flex-col items-center">
                 <p>Cathy Sun</p>
-                <p><u><Link href="https://github.com/cathysunkc" target="_new" className="hover:text-blue-400 hover:underline">Link to my GitHub repository</Link></u></p>
+                <p><Link href="https://github.com/cathysunkc" target="_new" className="hover:text-green-400 hover:underline">https://github.com/cathysunkc</Link></p>
             </div>);
 }
   
