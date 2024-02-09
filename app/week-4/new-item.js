@@ -42,19 +42,19 @@ export default function NewItem() {
     };
 
     return (
-        <main class="flex justify-center w-full">
+        <main className="flex justify-center w-full">
             {itemCreated}                    
-            <form class="p-2 m-4 bg-slate-900 text-black max-w-sm w-full" onSubmit={handleSubmit}>
-                <div class="mb-2">
-                    <input type="text" placeholder="Item name" required class="w-full mt-1 border-2 border-gray-300 p-2 rounded-lg font-sans"
+            <form className="p-2 m-4 bg-slate-900 text-black max-w-sm w-full" onSubmit={handleSubmit}>
+                <div className="mb-2">
+                    <input type="text" placeholder="Item name" required className="w-full mt-1 border-2 border-gray-300 p-2 rounded-lg font-sans"
                     onChange={handleNameChange}
                     value={name} />
                 </div>
-                <div class="flex justify-between">
-                    <input type="number" min="1" max="99" required class="w-20 ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans" 
+                <div className="flex justify-between">
+                    <input type="number" min="1" max="99" required className="w-20 ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans" 
                     onChange={handleQuantityChange}
                     value={quantity} />
-                    <select class="ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans" 
+                    <select className="ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans" 
                     onChange={handleCategoryChange}
                     value={category}>
                         <option disabled>Category</option>

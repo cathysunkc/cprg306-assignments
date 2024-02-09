@@ -1,8 +1,8 @@
 /*
  * Web Development 3 - CPRG306D
- * Week 3 - Assignment
+ * Week 5 - Assignment
  * Name: Cathy Sun
- * Date: 2024 Jan 20
+ * Date: 2024 Feb 05
  */
 
 export default function Item({ name, quantity, category }) {
