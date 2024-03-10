@@ -1,8 +1,8 @@
 /*
  * Web Development 3 - CPRG306D
- * Week 6 - Assignment
+ * Week 7 - Assignment
  * Name: Cathy Sun
- * Date: 2024 Mar 04
+ * Date: 2024 Mar 08
  */
 
 "use client";

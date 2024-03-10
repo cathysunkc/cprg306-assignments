@@ -1,8 +1,8 @@
 /*
  * Web Development 3 - CPRG306D
- * Week 5 - Assignment
+ * Week 7 - Assignment
  * Name: Cathy Sun
- * Date: 2024 Feb 05
+ * Date: 2024 Mar 08
  */
 "use client"
 
@@ -10,7 +10,7 @@ import { useState } from 'react';
 import Item from "./item.js";
 //import itemsList from "./items.json";
 
-export default function ItemList( {items} ) {
+export default function ItemList( {items, onItemSelect } ) {
   //define constant variables
   const nameValue = "name";
   const categoryValue = "category";
@@ -23,8 +23,7 @@ export default function ItemList( {items} ) {
   
   //assign variables
   //let myItemList = [...itemsList];  
-  let myItemList = [...items]; 
-  
+  let myItemList = [...items];   
   
   //handle button click
   function handleClick(value) {
@@ -51,7 +50,7 @@ export default function ItemList( {items} ) {
 
   return (
     <>
-      <div  className="mt-8 w-auto">
+      <div className="mt-8 w-auto">
         <label htmlFor="sort">Sort by: </label>
         <button className={`p-1 m-2 w-28 ${activeButton === nameValue  ? activeButtonColor : inactiveButtonColor}`}
            value={nameValue} 
@@ -66,6 +65,7 @@ export default function ItemList( {items} ) {
             quantity={item.quantity}
             category={item.category} 
             key={item.id} 
+            onSelect={() => onItemSelect(item.name)}
           />          
         ))}     
     </>
